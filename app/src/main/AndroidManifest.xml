@@ -38,7 +38,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBRdsbppOnuvjN-60Q8qmt6cYYo9JisAmA" />
+            android:value="API_KEY" />
 
         <activity
             android:name=".views.activity.PickLocationActivity"
