@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">Story App</string>
+
+    <string name="home">Beranda</string>
+    <string name="profile">Profil</string>
+    <string name="blank">" "</string>
+    <string name="add_story">Tambah Cerita</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Halo fragment kosong</string>
+
+    <!-- Content Description layout xml -->
+    <string name="content_description_fab_add_story">Cerita Baru</string>
+    <string name="content_descrption_btn_gallery">Pilih Gambar dari Galeri</string>
+    <string name="content_description_btn_shutter_camera">Mengambil foto</string>
+    <string name="content_description_btn_switch_camera">Memutar kamera</string>
+    <string name="content_description_avatar">Gambar Avatar Default</string>
+    <string name="content_description_image_story">Gambar Cerita Penggguna</string>
+    <string name="content_description_btn_app_setting">Buka Pengaturan Aplikasi</string>
+    <string name="content_description_btn_jump_up">Tombol gulir atas</string>
+    <string name="content_description_btn_camera_back">Tombol kembali ke beranda</string>
+    <string name="content_description_btn_camera_info">Tombol info</string>
+
+
+    <!-- Constant Value text -->
+    <string name="lorem_ipsum" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="person_name" translatable="false">Ferdi</string>
+    <string name="uploaded_date">Diuplod pada 30 April 2022 00.00</string>
+    <string name="story_description_hint">Tulis deskripsi disini</string>
+    <string name="greetings_auth_page">Hi, Selamat Datang </string>
+    <string name="text_login">Silahkan Masuk...</string>
+    <string name="text_email" translatable="false">Email</string>
+    <string name="text_password" translatable="false">Password</string>
+    <string name="text_auth_question_login">Belum punya akun?</string>
+    <string name="text_register">Silahkan Daftar...</string>
+    <string name="text_auth_question_register">Sudah memiliki akun?</string>
+    <string name="text_name">Nama</string>
+    <string name="text_setting">Pengaturan</string>
+    <string name="text_change_language">Ganti Bahasa</string>
+    <string name="text_permission">Set Permission Aplikasi</string>
+    <string name="text_uploaded">Diunggah</string>
+    <string name="text_seconds_ago">detik yang lalu</string>
+    <string name="text_minutes_ago">menit yang lalu</string>
+    <string name="text_hours_ago">jam yang lalu</string>
+    <string name="text_days_ago">hari yang lalu</string>
+    <string name="text_time_on">pada</string>
+    <string name="text_adapter_maps_default">Tampilan Default (Negara)</string>
+    <string name="text_adapter_maps_province">Tampilan Provinsi</string>
+    <string name="text_adapter_maps_city">Tampilan Kota</string>
+    <string name="text_adapter_maps_district">Tampilan Kecamatan</string>
+    <string name="text_adapter_maps_around">Lokasi saat ini</string>
+
+    <!-- Button text layout xml -->
+    <string name="button_text_ok">ok</string>
+    <string name="button_text_upload_story">Unggah Cerita</string>
+    <string name="login">Masuk</string>
+    <string name="register">Daftar</string>
+    <string name="logout">Keluar</string>
+
+    <!-- API Error & Response Code -->
+    <string name="API_success_upload_image">Cerita telah berhasil diunggah</string>
+    <string name="API_error_unauthorized">Alamat email tidak terdaftar / Email atau Kata Sandi Salah</string>
+    <string name="API_error_email_invalid">Format email tidak valid</string>
+    <string name="API_error_header_token">Anda Tidak Sah, silakan login ulang untuk perpanjangan Token</string>
+    <string name="API_error_large_payload">Gambar Anda melebihi batas maksimum file 1 MB, harap ubah gambar</string>
+    <string name="API_error_send_payload">Kesalahan saat mengirim gambar</string>
+    <string name="API_error_fetch_data">Kesalahan saat mengambil data</string>
+
+    <!-- UI Error -->
+    <string name="UI_validation_maps_select_area">Lokasi harus dipilih terlebih dahulu. Ketuk lokasi yang diinginkan untuk memilih lokasi</string>
+    <string name="UI_validation_empty_story_description">Deskripsi bidang harus diisi</string>
+    <string name="UI_validation_empty_email_password">Kolom Email dan Kata Sandi harus diisi</string>
+    <string name="UI_validation_invalid_email">Format email tidak valid</string>
+    <string name="UI_validation_empty_email_password_name">Nama Kolom, Email dan Kata Sandi harus diisi</string>
+    <string name="UI_validation_password_rules">Kata sandi harus terdiri dari minimal 8 karakter</string>
+    <string name="UI_info_successful_register_user">Pendaftaran pengguna baru berhasil, silakan login menggunakan email dan kata sandi yang terdaftar</string>
+    <string name="UI_error_permission_denied">
+        Izin Ditolak \n\n Silakan lakukan langkah-langkah berikut : \n
+        1. Buka menu profil dan buka Izin Aplikasi \n
+        2. Pilih izin pada info aplikasi \n
+        3. Pilih izin untuk kamera \n
+        4. Pilih opsi izinkan hanya saat menggunakan aplikasi
+    </string>
+    <string name="UI_error_camera_take_photo">Gagal mengambil gambar</string>
+    <string name="UI_info_homescreen">
+        Hi, Selamat datang di Story App \n\n Anda dapat melakukan beberapa tindakan di sini yaitu : \n
+        👉🏻 Klik tombol refresh atau geser ke atas pada bagian atas halaman untuk menyegarkan data \n
+        👉🏻 Pilih kartu untuk melihat detail cerita \n
+        👉🏻 Menekan tombol tambah untuk membuat cerita baru \n
+        👉🏻 Menekan menu profil untuk membuka beberapa pengaturan \n
+        👉🏻 Menekan tombol lompat ke atas untuk melompat ke halaman teratas dari data cerita terakhir
+    </string>
+    <string name="UI_info_profile">
+        Anda dapat melakukan beberapa tindakan di sini yaitu : \n
+        👉🏻 Pilih menu Ubah Bahasa untuk mengubah bahasa aplikasi sesuai dengan bahasa perangkat \n
+        👉🏻 Pilih menu Atur izin aplikasi untuk mengubah izin yang digunakan aplikasi (terkait penggunaan kamera untuk membuat cerita baru) \n
+        👉🏻 Pilih menu Atur tampilan untuk mengubah tampilan aplikasi (mode terang atau gelap) \n
+        👉🏻 Pilih tombol Logout untuk menghapus sesi login, login ulang atau daftarkan akun baru
+    </string>
+    <string name="UI_info_camera">
+        Berikut penjelasan beberapa tombolnya : \n
+        👉🏻 tombol kembali untuk kembali ke halaman sebelumnya \n
+        👉🏻 tombol informasi untuk menampilkan informasi tambahan \n
+        👉🏻 tombol galeri untuk mengunggah gambar dari galeri \n
+        👉🏻 tombol rana untuk mengambil gambar menggunakan kamera \n
+        👉🏻 tombol sakelar untuk memutar lensa kamera
+    </string>
+    <string name="appwidget_text" translatable="false">Contoh</string>
+    <string name="add_widget" translatable="false">Tambah widget</string>
+    <string name="app_widget_description" translatable="false">Ini adalah deskripsi widget aplikasi</string>
+    <string name="information">Informasi</string>
+    <string name="refresh">Refresh</string>
+    <string name="upload_story">Unggah Cerita</string>
+    <string name="detail_story">Detail Cerita</string>
+    <string name="text_description">Ini adalah deskripsi</string>
+    <string name="name_profile">Nama</string>
+    <string name="email_profile">nama@email.com</string>
+    <string name="uid_profile">user-xxxxxx</string>
+    <string name="select_location">Pilih Lokasi</string>
+    <string name="description">Deskripsi</string>
+    <string name="clear_description">Hapus deskripsi</string>
+    <string name="location">Lokasi</string>
+    <string name="title_activity_pick_location">PickLocationActivity</string>
+    <string name="cancel">Kembali</string>
+    <string name="next">Selanutnya</string>
+    <string name="icon_maps">icon maps</string>
+    <string name="tooltip_location">tooltip lokasi</string>
+    <string name="retry">uang</string>
+    <string name="loading_error_message">Gagal menerima data</string>
+    <string name="text_preview_image">Pratinjau Gambar</string>
+    <string name="content_description_btn_close_dialog">Tutup dialog</string>
+    <string name="text_storage_location">Lokasi Penyimpanan</string>
+    <string name="description_btn_info">Tombol info</string>
+    <string name="text_uploaded_story">Cerita Diunggah</string>
+    <string name="text_empty_data">Data tidak tersedia</string>
+    <string name="description_icon_maps">Deskripsi maps</string>
+    <string name="description_avatar">profil</string>
+    <string name="text_tooltip_view_story">Ketuk untuk melihat cerita</string>
+    <string name="validation_permission_location">Berikan akses aplikasi untuk membaca lokasi Anda</string>
+    <string name="search">Cari</string>
+    <string name="history">Riwayat</string>
+    <string name="title_menu">Judul menu</string>
+
+</resources>

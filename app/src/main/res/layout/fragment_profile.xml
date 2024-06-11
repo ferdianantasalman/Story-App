@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.activity.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_profile_background"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/content_description_avatar"
+            android:src="@drawable/ic_profile" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/colorSecondaryAccent"
+            android:textSize="20sp"
+            android:alpha="0"
+            tools:alpha="100"
+            tools:text="@string/name_profile" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:alpha="0"
+            tools:alpha="100"
+            tools:text="@string/email_profile" />
+
+        <TextView
+            android:id="@+id/tv_uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="monospace"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:alpha="0"
+            tools:alpha="100"
+            tools:text="@string/uid_profile" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/text_setting"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:alpha="0"
+        tools:alpha="100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container" />
+
+    <ImageView
+        android:id="@+id/btn_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:padding="16dp"
+        android:src="@drawable/ic_info"
+        android:alpha="0"
+        tools:alpha="100"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_setting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_setting"/>
+
+    <RelativeLayout
+        android:id="@+id/btn_set_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/custom_profile_button_ripple"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:alpha="0"
+        tools:alpha="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_setting">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/text_change_language"
+            android:textColor="@color/colorSecondaryDark"
+            app:drawableStartCompat="@drawable/ic_language"
+            app:drawableTint="@color/colorSecondaryDark"
+            tools:ignore="RelativeOverlap"
+            tools:targetApi="m" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/content_description_btn_app_setting"
+            android:src="@drawable/ic_arrow_forward"
+            app:tint="@color/colorSecondary" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_set_permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/custom_profile_button_ripple"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:alpha="0"
+        tools:alpha="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_set_language">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/text_permission"
+            android:textColor="@color/colorSecondaryDark"
+            app:drawableStartCompat="@drawable/ic_permission"
+            app:drawableTint="@color/colorSecondaryDark"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/content_description_btn_app_setting"
+            android:src="@drawable/ic_arrow_forward"
+            app:tint="@color/colorSecondary" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_set_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/custom_profile_button_ripple"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:alpha="0"
+        tools:alpha="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_set_permission">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:text="Set App Display"
+            android:textColor="@color/colorSecondaryDark"
+            app:drawableStartCompat="@drawable/ic_display"
+            app:drawableTint="@color/colorSecondaryDark"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/content_description_btn_app_setting"
+            android:src="@drawable/ic_arrow_forward"
+            app:tint="@color/colorSecondary" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/action_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorSecondaryDark"
+        android:text="@string/logout"
+        android:textAllCaps="false"
+        android:alpha="0"
+        tools:alpha="100"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_set_display"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_last_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:alpha="0"
+        tools:alpha="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/action_logout"
+        tools:text="Terakhir login pada 30 April 2022 00.00" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
